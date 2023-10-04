@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Open+Sans:wght@300;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  width: 70%;
+  margin: 0 auto;
+}
+
+@media (max-width: 700px) {
+  body {
+    width: 90%;
+  }
+}
+
+img#logo {
+  width: 150px;
+  margin-top: 40px;
+}
+
+h1 {
+  font-size: 2.25rem;
+  margin-bottom: 30px;
+}
+
+h1 span {
+  font-size: 7px;
+  color: #cccc;
+  font-weight: 100;
+}
+
+.sub {
+  font-size: 1.5rem;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .sub {
+    font-size: 1.3rem;
+  }
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 700px) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}
+
+.projects .project {
+  border: 2px solid #f5f5f5;
+  border-radius: 15px;
+  padding: 40px;
+}
+
+@media (max-width: 700px) {
+  .projects .project {
+    padding: 30px;
+  }
+}
+
+.projects .project h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.projects .project h3 span {
+  text-decoration: none;
+}
+
+.projects .project p {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.projects .tags span {
+  background: #ff8b8b;
+  padding: 10px 25px;
+  border-radius: 100px;
+  border: 2px solid #f51111;
+  display: inline-block;
+  margin: 5px 0;
+}
+
+@media (max-width: 700px) {
+  .projects .tags span {
+    font-size: 14px;
+    border-width: 1px;
+  }
+}
+
+.projects .tags span.green {
+  background: #ddffe2;
+  border-color: #9dffb3;
+}
+
+.projects .tags span.js {
+  background: #fffedd;
+  border-color: #ffd89d;
+}
+
+.projects .tags span.go {
+  background: #ddfbff;
+  border-color: #9df9ff;
+}
+
+.projects .tags span.orange {
+  background: #ffeddd;
+  border-color: #ffbb9d;
+}
+
+.projects .tags span.postgres {
+  background: #b2d9ff;
+  border-color: #399dff;
+}
