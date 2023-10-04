@@ -36,7 +36,32 @@ h1 span {
 
 .sub {
   font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #731ad8;
+  color: #fff;
+  text-decoration: none;
+
+  vertical-align: middle;
+
+  padding: 15px 25px;
+  border-radius: 7px;
   margin-bottom: 60px;
+}
+
+.btn img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.btn:hover {
+  background: #5f0fc4;
 }
 
 @media (max-width: 700px) {
