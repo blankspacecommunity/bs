@@ -24,7 +24,7 @@ img#logo {
 }
 
 h1 {
-  font-size: 2.25rem;
+  font-size: 1.8rem;
   margin-bottom: 30px;
 }
 
@@ -90,7 +90,7 @@ h1 span {
 .projects .project {
   border: 2px solid #f5f5f5;
   border-radius: 15px;
-  padding: 40px;
+  padding: 60px;
 }
 
 @media (max-width: 700px) {
@@ -118,9 +118,10 @@ h1 span {
   background: #ff8b8b;
   padding: 10px 25px;
   border-radius: 100px;
-  border: 2px solid #f51111;
+  border: 1px solid #f51111;
   display: inline-block;
   margin: 5px 0;
+  margin-right: 5px;
 }
 
 @media (max-width: 700px) {
@@ -153,4 +154,36 @@ h1 span {
 .projects .tags span.postgres {
   background: #b2d9ff;
   border-color: #399dff;
+}
+
+/* Dark */
+
+.projects .tags span.green-dark {
+  background: #002406;
+  border-color: #9dffb3;
+  color: #ddffe2;
+}
+
+.projects .tags span.js-dark {
+  background: #181700;
+  border-color: #ff852c;
+  color: #ff852c;
+}
+
+.projects .tags span.go-dark {
+  background: #001f23;
+  border-color: #9df9ff;
+  color: #ddfbff;
+}
+
+.projects .tags span.orange-dark {
+  background: #3f1e00;
+  border-color: #ffbb9d;
+  color: #ffeddd;
+}
+
+.projects .tags span.postgres-dark {
+  background: #00172f;
+  border-color: #9df9ff;
+  color: #a8ccf0;
 }
