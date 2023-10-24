@@ -3,16 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blankspace</title>
+    <title>BlankSpace</title>
     <link rel="icon" href="./logo.svg" type="image/x-icon" />
+
     <link rel="stylesheet" href="style.css" />
+
+    <script src="script.js"></script>
   </head>
 
   <body>
+    <header>
+      <img
+        class="mode-toggle-button"
+        id="mode-toggle-button"
+        src="dark_mode_btn.svg"
+        alt="Dark Mode"
+        onclick="toggleMode()"
+      />
+    </header>
     <a href="https://github.com/blankspace-community">
       <img src="logo.svg" alt="" id="logo" />
     </a>
-    <h1>Blankspace <span>It's not blank ;)</span></h1>
+    <h1>BlankSpace <span></span></h1>
 
     <p class="sub">
       A community for those who code and want to learn how to code.
@@ -20,7 +32,7 @@
 
     <a href="https://github.com/blankspace-community" class="btn">
       <img src="./github-mark-white.svg" alt="" />
-      <span>Github Community</span>
+      <span>Community Github</span>
     </a>
 
     <h1>Ongoing projects</h1>
