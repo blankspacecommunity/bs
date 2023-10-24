@@ -7,6 +7,8 @@
     <link rel="icon" href="./logo.svg" type="image/x-icon" />
 
     <link rel="stylesheet" href="style.css" />
+
+    <script src="script.js"></script>
   </head>
 
   <body>
@@ -92,71 +94,4 @@
       </div>
     </section>
   </body>
-
-  <style>
-    .high-contrast {
-      background-color: #000;
-      color: #fff;
-    }
-
-    .high-contrast .project {
-      color: #fff;
-    }
-
-    .high-contrast body {
-      color: #fff;
-    }
-
-    .high-contrast .tags span {
-      border: 1px solid rgb(17, 17, 17);
-    }
-
-    .high-contrast .btn {
-      border: 1px solid rgb(16, 16, 16);
-    }
-  </style>
-
-  <script>
-    let darkMode = true; // Initial mode is dark
-
-    function toggleMode() {
-      const button = document.getElementById("mode-toggle-button");
-      const logo = document.getElementById("logo");
-      const projects = document.querySelectorAll(".projects .tags span.green");
-      const projects1 = document.querySelectorAll(".projects .tags span.js");
-      const projects2 = document.querySelectorAll(".projects .tags span.go");
-      const projects3 = document.querySelectorAll(
-        ".projects .tags span.orange"
-      );
-      const projects4 = document.querySelectorAll(
-        ".projects .tags span.postgres"
-      );
-
-      darkMode = !darkMode; // Toggle the mode state
-
-      if (darkMode) {
-        // Switch to dark mode
-        button.src = "dark_mode_btn.svg";
-        logo.src = "logo.svg";
-        document.body.classList.remove("high-contrast");
-
-        projects.forEach((span) => span.classList.remove("green-dark"));
-        projects2.forEach((span) => span.classList.remove("go-dark"));
-        projects3.forEach((span) => span.classList.remove("orange-dark"));
-        projects4.forEach((span) => span.classList.remove("postgres-dark"));
-        projects1.forEach((span) => span.classList.remove("js-dark"));
-      } else {
-        // Switch to light mode
-        button.src = "light_mode_btn.svg";
-        logo.src = "nightmode.svg";
-        document.body.classList.add("high-contrast");
-
-        projects.forEach((span) => span.classList.add("green-dark"));
-        projects2.forEach((span) => span.classList.add("go-dark"));
-        projects3.forEach((span) => span.classList.add("orange-dark"));
-        projects4.forEach((span) => span.classList.add("postgres-dark"));
-        projects1.forEach((span) => span.classList.add("js-dark"));
-      }
-    }
-  </script>
 </html>
