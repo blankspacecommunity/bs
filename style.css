@@ -24,7 +24,7 @@ img#logo {
 }
 
 h1 {
-  font-size: 1.8rem;
+  font-size: 2.25rem;
   margin-bottom: 30px;
 }
 
@@ -43,13 +43,10 @@ h1 span {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-
   background: #731ad8;
   color: #fff;
   text-decoration: none;
-
   vertical-align: middle;
-
   padding: 15px 25px;
   border-radius: 7px;
   margin-bottom: 60px;
@@ -88,9 +85,9 @@ h1 span {
 }
 
 .projects .project {
-  border: 2px solid #f5f5f5;
+  border: 2px solid #282828;
   border-radius: 15px;
-  padding: 60px;
+  padding: 40px;
 }
 
 @media (max-width: 700px) {
@@ -118,10 +115,9 @@ h1 span {
   background: #ff8b8b;
   padding: 10px 25px;
   border-radius: 100px;
-  border: 1px solid #f51111;
+  border: 2px solid #f51111;
   display: inline-block;
   margin: 5px 0;
-  margin-right: 5px;
 }
 
 @media (max-width: 700px) {
@@ -129,6 +125,11 @@ h1 span {
     font-size: 14px;
     border-width: 1px;
   }
+}
+
+.projects .project:hover {
+  box-shadow: 0 0 10px rgb(221, 203, 124);
+  transition: box-shadow 0.3s;
 }
 
 .projects .tags span.green {
@@ -156,34 +157,59 @@ h1 span {
   border-color: #399dff;
 }
 
-/* Dark */
-
 .projects .tags span.green-dark {
   background: #002406;
   border-color: #9dffb3;
-  color: #ddffe2;
+  color: #f8fafb;
 }
 
 .projects .tags span.js-dark {
   background: #181700;
   border-color: #ff852c;
-  color: #ff852c;
+  color: #f8fafb;
 }
 
 .projects .tags span.go-dark {
   background: #001f23;
   border-color: #9df9ff;
-  color: #ddfbff;
+  color: #f8fafb;
 }
 
 .projects .tags span.orange-dark {
   background: #3f1e00;
   border-color: #ffbb9d;
-  color: #ffeddd;
+  color: #f8fafb;
 }
 
 .projects .tags span.postgres-dark {
   background: #00172f;
   border-color: #9df9ff;
-  color: #a8ccf0;
+  color: #f8fafb;
+}
+
+.mode-toggle-button {
+  position: relative;
+  top: 240px;
+  left: 230px;
+}
+
+.high-contrast {
+  background-color: #000;
+  color: #fff;
+}
+
+.high-contrast .project {
+  color: #fff;
+}
+
+.high-contrast body {
+  color: #fff;
+}
+
+.high-contrast .tags span {
+  border: 1px solid rgb(17, 17, 17);
+}
+
+.high-contrast .btn {
+  border: 1px solid rgb(16, 16, 16);
 }
